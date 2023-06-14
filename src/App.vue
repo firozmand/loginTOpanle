@@ -1,15 +1,16 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+
 </script>
 
-<template >
-  <div class="  flex w-screen  bg-red-500 p-2 ">
-    <div class=" p-2 mx-5"> <RouterLink  to="/">Home</RouterLink> </div>
-    <div class=" p-2 mx-5"> <RouterLink is="div" class=" p-2 mx-5" to="/login">login</RouterLink> </div>
-
+<template class="flex overflow-hidden" >
+    <div class="  flex flex-row w-full  bg-red-500 p-2 ">
+      <div class=" p-2 mx-5"> <RouterLink  to="/">Home</RouterLink> </div>
+      <div class=" p-2 mx-5"> <RouterLink  to="/login">login</RouterLink> </div>
+    </div>
+  <div class=" flex w-full h-screen overflow-hidden justify-center items-center">
+    <RouterView />
   </div>
-
-  <RouterView />
 </template>
 
 <style scoped>
